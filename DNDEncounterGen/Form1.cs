@@ -17,6 +17,9 @@ namespace DNDEncounterGen
             InitializeComponent();
         }
 
+        // Create arrays with XP threshold by character level
+        int[] easyThreshold = { 50, 100, 200, 350, 550, 800, 1100, 1500, 1700, 2200, 2800, 3500, 4400, 5400, 6500, 7700, 9000, 10400, 11900, 13500 };
+
         // When either textbox is changed for calculating CR, trigger the calculation method
         private void txtPlayerCt_TextChanged(object sender, EventArgs e)
         {
@@ -41,7 +44,17 @@ namespace DNDEncounterGen
                 int.TryParse(txtPlayerLvl.Text, out playerLvl)
                 )
             {
+                try
+                {
+                    // Calc CR, move it to output box
+                    int avgCR = easyThreshold[playerLvl - 1] * numPlayers;
 
+                    txtCR.Text = avgCR.ToString();
+                }
+                catch (Exception)
+                {
+                    txtCR.Text = "Error";
+                }
             }
         }
     }
