@@ -57,7 +57,7 @@
             this.grpCR.Controls.Add(this.txtPlayerCt);
             this.grpCR.Location = new System.Drawing.Point(12, 12);
             this.grpCR.Name = "grpCR";
-            this.grpCR.Size = new System.Drawing.Size(257, 160);
+            this.grpCR.Size = new System.Drawing.Size(249, 160);
             this.grpCR.TabIndex = 0;
             this.grpCR.TabStop = false;
             this.grpCR.Text = "Combat Rating";
@@ -129,7 +129,7 @@
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Location = new System.Drawing.Point(8, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(243, 68);
+            this.groupBox1.Size = new System.Drawing.Size(232, 68);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Threshold Level";

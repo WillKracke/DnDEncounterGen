@@ -27,7 +27,7 @@ namespace DNDEncounterGen
         {
             calcCombatRating();
         }
-
+        
         // Calculates CR, after checking if both textboxes are full. Requires num of players and level of players
         private void calcCombatRating()
         {
