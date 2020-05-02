@@ -1,0 +1,10 @@
+Cloud Giant,5000
+Ettin,1100
+Fire Giant,5000
+Frost Giant,3900
+Hill Giant,1800
+Ogre,450
+Oni,2900
+Stone Giant,2900
+Storm Giant,10000
+Troll,1800

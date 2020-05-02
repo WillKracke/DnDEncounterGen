@@ -1,0 +1,86 @@
+Ape,100
+Axe Beak,50
+Baboon,10
+Badger,10
+Bat,10
+Black Bear,100
+Blood Hawk,25
+Boar,50
+Brown Bear,200
+Camel,25
+Cat,10
+Constrictor Snake,50
+Crab,10
+Crocidile,100
+Deer,10
+Dire Wolf,200
+Diseased Giant Rat,25
+Draft Horse,50
+Eagle,10
+Elephant,1100
+Elk,50
+Flying Snake,25
+Frog,10
+Giant Ape,2900
+Giant Badger,50
+Giant Bat,50
+Giant Boar,450
+Giant Centipede,50
+Giant Constrictor Snake,450
+Giant Crab,25
+Giant Crocidile,1800
+Giant Eagle,200
+Giant Elk,450
+Giant Fire Beetle,10
+Giant Frog,50
+Giant Goat,100
+Giant Hyena,200
+Giant Lizard,50
+Giant Octopus,200
+Giant Owl,50
+Giant Poisonous Snake,50
+Giant Rat,25
+Giant Scorpion,700
+Giant Sea Horse,100
+Giant Shark,1800
+Giant Spider,200
+Giant Toad,200
+Giant Vulture,200
+Giant Wasp,100
+Giant Weasel,25
+Giant Wolf Spider,50
+Goat,10
+Hawk,10
+Hunter Shark,450
+Hyena,10
+Jackal,10
+Killer Whale,700
+Lion,200
+Lizard,10
+Mammoth,2300
+Mastiff,25
+Mule,25
+Octopus,10
+Panther,50
+Plesiosaurus,450
+Poisonous Snake,25
+Polar Bear,450
+Pony,25
+Quipper,10
+Rat,10
+Raven,10
+Reef Shark,100
+Rhinoceros,450
+Riding Horse,50
+Saber-Toothed Tiger,450
+Scorpion,10
+Sea Horse,10
+Spider,10
+Stirge,25
+Tiger,200
+Triceratops,1800
+Tyrannosaurus Rex,3900
+Vulture,10
+Warhorse,100
+Weasel,10
+Wolf,50

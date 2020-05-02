@@ -1,0 +1,6 @@
+Couatl,1100
+Deva,5900
+Pegasus,450
+Planetar,15000
+Solar,33000
+Unicorn,1800

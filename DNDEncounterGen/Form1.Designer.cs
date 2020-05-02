@@ -41,6 +41,7 @@
             this.txtCR = new System.Windows.Forms.TextBox();
             this.txtPlayerLvl = new System.Windows.Forms.TextBox();
             this.txtPlayerCt = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.grpCR.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +85,6 @@
             this.rbDead.TabIndex = 3;
             this.rbDead.Text = "Deadly";
             this.rbDead.UseVisualStyleBackColor = true;
-            this.rbDead.CheckedChanged += calcCombatRating;
             // 
             // rbHard
             // 
@@ -95,7 +95,6 @@
             this.rbHard.TabIndex = 2;
             this.rbHard.Text = "Challenging";
             this.rbHard.UseVisualStyleBackColor = true;
-            this.rbHard.CheckedChanged += calcCombatRating;
             // 
             // rbMed
             // 
@@ -106,7 +105,6 @@
             this.rbMed.TabIndex = 1;
             this.rbMed.Text = "Moderate";
             this.rbMed.UseVisualStyleBackColor = true;
-            this.rbMed.CheckedChanged += calcCombatRating;
             // 
             // rbEasy
             // 
@@ -119,16 +117,15 @@
             this.rbEasy.TabStop = true;
             this.rbEasy.Text = "Easy";
             this.rbEasy.UseVisualStyleBackColor = true;
-            this.rbEasy.CheckedChanged += calcCombatRating;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(141, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 13);
+            this.label4.Size = new System.Drawing.Size(99, 26);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Avg Combat Rating";
+            this.label4.Text = "Avg Combat Rating\r\n(XP)";
             // 
             // label3
             // 
@@ -170,7 +167,6 @@
             this.txtPlayerLvl.Name = "txtPlayerLvl";
             this.txtPlayerLvl.Size = new System.Drawing.Size(43, 20);
             this.txtPlayerLvl.TabIndex = 1;
-            this.txtPlayerLvl.TextChanged += calcCombatRating;
             // 
             // txtPlayerCt
             // 
@@ -178,13 +174,22 @@
             this.txtPlayerCt.Name = "txtPlayerCt";
             this.txtPlayerCt.Size = new System.Drawing.Size(43, 20);
             this.txtPlayerCt.TabIndex = 0;
-            this.txtPlayerCt.TextChanged += calcCombatRating;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Location = new System.Drawing.Point(268, 13);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(278, 155);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Enabled Enemy Sets";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 450);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpCR);
             this.Name = "Form1";
             this.Text = "DND Encounter Generator 5e";
@@ -211,6 +216,7 @@
         private System.Windows.Forms.RadioButton rbHard;
         private System.Windows.Forms.RadioButton rbMed;
         private System.Windows.Forms.RadioButton rbEasy;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

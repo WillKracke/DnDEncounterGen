@@ -1,0 +1,9 @@
+Animated Armor,200
+Clay Golem,5000
+Flesh Golem,1800
+Flying Sword,50
+Homunuculus,10
+Iron Golem,15000
+Rug of Smothering,450
+Shield Guardian,2900
+Stone Golem,5900

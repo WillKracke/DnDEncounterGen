@@ -1,0 +1,40 @@
+Acolyte,50
+Archmage,8400
+Assassin,3900
+Bandit,25
+Bandit Captain,450
+Berserker,450
+Commoner,10
+Cult Fanatic,450
+Cultist,25
+Druid,450
+Gladiator,1800
+Guard,25
+Knight,700
+Mage,2300
+Noble,25
+Priest,450
+Scout,100
+Spy,200
+Thug,100
+Tribal Warrior,25
+Veteran,700
+Duergar,200
+Drow,50
+Gnoll,100
+Deep Gnome,100
+Bugbear,200
+Goblin,50
+Hobgoblin,100
+Grimlock,50
+Half-Red Dragon Veteran,1800
+Werebear,1800
+Wereboar,1100
+Wererat,450
+Weretiger,1100
+Werewolf,700
+Kobold,25
+Lizardfolk,100
+Merfolk,25
+Orc,100
+Sahuagin,100

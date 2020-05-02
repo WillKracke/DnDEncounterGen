@@ -1,0 +1,24 @@
+Hell Hound,700
+Night Hag,1800
+Nightmare,700
+Rakshasa,10000
+Balor,22000
+Dretch,50
+Glabrezu,5000
+Hezrou,3900
+Marilith,15000
+Nalfeshnee,10000
+Quasit,200
+Vrock,2300
+Barbed Devil,1800
+Bearded Devil,700
+Bone Devil,5000
+Chain Devil,3900
+Erinyes,8400
+Horned Devil,7200
+Ice Devil,11500
+Lemure,10
+Pit Fiend,25000
+Imp,200
+Incubus,1100
+Succubus,1100
