@@ -42,8 +42,21 @@
             this.txtPlayerLvl = new System.Windows.Forms.TextBox();
             this.txtPlayerCt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.loadBar = new System.Windows.Forms.ProgressBar();
+            this.chkAnimal = new System.Windows.Forms.CheckBox();
+            this.chkCelest = new System.Windows.Forms.CheckBox();
+            this.chkDemon = new System.Windows.Forms.CheckBox();
+            this.chkConstr = new System.Windows.Forms.CheckBox();
+            this.chkElement = new System.Windows.Forms.CheckBox();
+            this.chkDragon = new System.Windows.Forms.CheckBox();
+            this.chkHuman = new System.Windows.Forms.CheckBox();
+            this.chkGiant = new System.Windows.Forms.CheckBox();
+            this.chkUndead = new System.Windows.Forms.CheckBox();
+            this.chkMonster = new System.Windows.Forms.CheckBox();
+            this.btnLoadEnemies = new System.Windows.Forms.Button();
             this.grpCR.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpCR
@@ -177,26 +190,159 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnLoadEnemies);
+            this.groupBox2.Controls.Add(this.chkUndead);
+            this.groupBox2.Controls.Add(this.chkMonster);
+            this.groupBox2.Controls.Add(this.chkHuman);
+            this.groupBox2.Controls.Add(this.chkGiant);
+            this.groupBox2.Controls.Add(this.chkElement);
+            this.groupBox2.Controls.Add(this.chkDragon);
+            this.groupBox2.Controls.Add(this.chkDemon);
+            this.groupBox2.Controls.Add(this.chkConstr);
+            this.groupBox2.Controls.Add(this.chkCelest);
+            this.groupBox2.Controls.Add(this.chkAnimal);
             this.groupBox2.Location = new System.Drawing.Point(268, 13);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(278, 155);
+            this.groupBox2.Size = new System.Drawing.Size(278, 159);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Enabled Enemy Sets";
+            // 
+            // loadBar
+            // 
+            this.loadBar.Location = new System.Drawing.Point(12, 415);
+            this.loadBar.Name = "loadBar";
+            this.loadBar.Size = new System.Drawing.Size(534, 23);
+            this.loadBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.loadBar.TabIndex = 2;
+            // 
+            // chkAnimal
+            // 
+            this.chkAnimal.AutoSize = true;
+            this.chkAnimal.Location = new System.Drawing.Point(8, 19);
+            this.chkAnimal.Name = "chkAnimal";
+            this.chkAnimal.Size = new System.Drawing.Size(62, 17);
+            this.chkAnimal.TabIndex = 0;
+            this.chkAnimal.Text = "Animals";
+            this.chkAnimal.UseVisualStyleBackColor = true;
+            // 
+            // chkCelest
+            // 
+            this.chkCelest.AutoSize = true;
+            this.chkCelest.Location = new System.Drawing.Point(95, 19);
+            this.chkCelest.Name = "chkCelest";
+            this.chkCelest.Size = new System.Drawing.Size(65, 17);
+            this.chkCelest.TabIndex = 1;
+            this.chkCelest.Text = "Celestial";
+            this.chkCelest.UseVisualStyleBackColor = true;
+            // 
+            // chkDemon
+            // 
+            this.chkDemon.AutoSize = true;
+            this.chkDemon.Location = new System.Drawing.Point(95, 42);
+            this.chkDemon.Name = "chkDemon";
+            this.chkDemon.Size = new System.Drawing.Size(68, 17);
+            this.chkDemon.TabIndex = 3;
+            this.chkDemon.Text = "Demonic";
+            this.chkDemon.UseVisualStyleBackColor = true;
+            // 
+            // chkConstr
+            // 
+            this.chkConstr.AutoSize = true;
+            this.chkConstr.Location = new System.Drawing.Point(8, 42);
+            this.chkConstr.Name = "chkConstr";
+            this.chkConstr.Size = new System.Drawing.Size(76, 17);
+            this.chkConstr.TabIndex = 2;
+            this.chkConstr.Text = "Constructs";
+            this.chkConstr.UseVisualStyleBackColor = true;
+            // 
+            // chkElement
+            // 
+            this.chkElement.AutoSize = true;
+            this.chkElement.Location = new System.Drawing.Point(95, 66);
+            this.chkElement.Name = "chkElement";
+            this.chkElement.Size = new System.Drawing.Size(77, 17);
+            this.chkElement.TabIndex = 5;
+            this.chkElement.Text = "Elementals";
+            this.chkElement.UseVisualStyleBackColor = true;
+            // 
+            // chkDragon
+            // 
+            this.chkDragon.AutoSize = true;
+            this.chkDragon.Location = new System.Drawing.Point(8, 66);
+            this.chkDragon.Name = "chkDragon";
+            this.chkDragon.Size = new System.Drawing.Size(66, 17);
+            this.chkDragon.TabIndex = 4;
+            this.chkDragon.Text = "Dragons";
+            this.chkDragon.UseVisualStyleBackColor = true;
+            // 
+            // chkHuman
+            // 
+            this.chkHuman.AutoSize = true;
+            this.chkHuman.Location = new System.Drawing.Point(95, 89);
+            this.chkHuman.Name = "chkHuman";
+            this.chkHuman.Size = new System.Drawing.Size(79, 17);
+            this.chkHuman.TabIndex = 7;
+            this.chkHuman.Text = "Humanoids";
+            this.chkHuman.UseVisualStyleBackColor = true;
+            // 
+            // chkGiant
+            // 
+            this.chkGiant.AutoSize = true;
+            this.chkGiant.Location = new System.Drawing.Point(8, 89);
+            this.chkGiant.Name = "chkGiant";
+            this.chkGiant.Size = new System.Drawing.Size(56, 17);
+            this.chkGiant.TabIndex = 6;
+            this.chkGiant.Text = "Giants";
+            this.chkGiant.UseVisualStyleBackColor = true;
+            // 
+            // chkUndead
+            // 
+            this.chkUndead.AutoSize = true;
+            this.chkUndead.Location = new System.Drawing.Point(95, 112);
+            this.chkUndead.Name = "chkUndead";
+            this.chkUndead.Size = new System.Drawing.Size(64, 17);
+            this.chkUndead.TabIndex = 9;
+            this.chkUndead.Text = "Undead";
+            this.chkUndead.UseVisualStyleBackColor = true;
+            // 
+            // chkMonster
+            // 
+            this.chkMonster.AutoSize = true;
+            this.chkMonster.Location = new System.Drawing.Point(8, 112);
+            this.chkMonster.Name = "chkMonster";
+            this.chkMonster.Size = new System.Drawing.Size(69, 17);
+            this.chkMonster.TabIndex = 8;
+            this.chkMonster.Text = "Monsters";
+            this.chkMonster.UseVisualStyleBackColor = true;
+            // 
+            // btnLoadEnemies
+            // 
+            this.btnLoadEnemies.Location = new System.Drawing.Point(6, 130);
+            this.btnLoadEnemies.Name = "btnLoadEnemies";
+            this.btnLoadEnemies.Size = new System.Drawing.Size(266, 23);
+            this.btnLoadEnemies.TabIndex = 10;
+            this.btnLoadEnemies.Text = "Load Enemy List";
+            this.btnLoadEnemies.UseVisualStyleBackColor = true;
+            this.btnLoadEnemies.Click += new System.EventHandler(this.btnLoadEnemies_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 450);
+            this.Controls.Add(this.loadBar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grpCR);
             this.Name = "Form1";
             this.Text = "DND Encounter Generator 5e";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grpCR.ResumeLayout(false);
             this.grpCR.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -217,6 +363,18 @@
         private System.Windows.Forms.RadioButton rbMed;
         private System.Windows.Forms.RadioButton rbEasy;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnLoadEnemies;
+        private System.Windows.Forms.CheckBox chkUndead;
+        private System.Windows.Forms.CheckBox chkMonster;
+        private System.Windows.Forms.CheckBox chkHuman;
+        private System.Windows.Forms.CheckBox chkGiant;
+        private System.Windows.Forms.CheckBox chkElement;
+        private System.Windows.Forms.CheckBox chkDragon;
+        private System.Windows.Forms.CheckBox chkDemon;
+        private System.Windows.Forms.CheckBox chkConstr;
+        private System.Windows.Forms.CheckBox chkCelest;
+        private System.Windows.Forms.CheckBox chkAnimal;
+        private System.Windows.Forms.ProgressBar loadBar;
     }
 }
 
